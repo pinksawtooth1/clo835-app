@@ -1,0 +1,24 @@
+# Ignore Terraform local directories
+terraform/.terraform/
+
+# Ignore Terraform variable files that may contain secrets
+terraform/*.tfvars
+terraform/*.tfvars.json
+
+# Ignore crash logs and override files
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+
+# Ignore SSH key files (e.g., your JoshuaAssignment.pem)
+*.pem
+
+# Ignore OS files (Mac/Linux/Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore editor and IDE config files
+.vscode/
+.idea/
+*.swp
