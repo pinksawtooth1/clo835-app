@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joshua's Web App - CLO835</title>
+    <style>
+        body {
+            background-color: {{ background_color }};
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 40px 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #1e88e5;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 12px 0;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1> Deployed by Joshua Noble</h1>
+        <p>Welcome to this fully containerized Flask application!</p>
+        <p>Current Background: <strong>{{ background_color|title }}</strong></p>
+        <p>Status: <strong>App is running successfully </strong></p>
+
+        <div class="footer">
+            <p>Created for CLO835</p>
+            <p>Summer 2025</p>
+            <p>GitHub: <a href="https://github.com/pinksawtooth1" target="_blank">@JoshuaNoble</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
